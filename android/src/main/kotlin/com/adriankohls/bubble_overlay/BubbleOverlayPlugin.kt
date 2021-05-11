@@ -83,6 +83,7 @@ class BubbleOverlayPlugin : ActivityAware, FlutterPlugin, MethodChannel.MethodCa
                             mOverlayService?.updateBubbleColor(backgroundColor)
                         mOverlayService?.updateIconTop(topIconAsset)
                         mOverlayService?.updateIconBottom(bottomIconAsset)
+                        mOverlayService?.onBubbleCardViewClick()
                     }
             }
 
