@@ -84,7 +84,7 @@ class BubbleOverlayService : Service() {
     fun onBubbleCardViewClick() {
         val img_card_bg = mBubbleView?.findViewById<ImageView>(R.id.img_card_bg)
         img_card_bg?.setOnClickListener {
-                val intent = packageManager.getLaunchIntentForPackage("com.adriankohls.bubble_overlay_example")
+                val intent = packageManager.getLaunchIntentForPackage("in.boomcabs.operator")
                 if (intent != null) {
                     startActivity(intent)
                 }
